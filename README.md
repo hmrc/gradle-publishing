@@ -21,7 +21,7 @@ To use scripts/ plugins from this project in another Gradle project, simply use 
 
 To avoid non-deterministic builds, it is strongly recommended to use a particular release of this project, rather than just pulling in master, so please check the available release tags before sourcing any files. e.g.
 
-    apply from: "https://github.com/hmrc/gradle-publishing/blob/v0.1.0/<some-file>" 
+    apply from: "https://raw.githubusercontent.com/hmrc/gradle-publishing/v0.2.0/<some-file>" 
     
 ## Bintray Distribution
 
