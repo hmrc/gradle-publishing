@@ -17,9 +17,15 @@ To perform a final release:
     
 # Usage
 
-To use scripts/ plugins from this project in another Gradle project, simply use the `apply from: <url>` behaviour in Gradle.
+To use scripts/ plugins from this project in another Gradle project, simply use the `apply from: "<url>"` behaviour in Gradle.
 
-To avoid non-deterministic builds, it is strongly recommended to use a particular release of this project, rather than just pulling in master, so please check the available release tags before sourcing any files.
+To avoid non-deterministic builds, it is strongly recommended to use a particular release of this project, rather than just pulling in master, so please check the available release tags before sourcing any files. e.g.
+
+    apply from: "https://github.com/hmrc/gradle-publishing/blob/v0.1.0/<some-file>" 
+    
+## Bintray Distribution
+
+The `hmrc_bintray_distribution_plugin.gradle` file provides a plugin which distributes CITO artefacts from Artifactory to HMRC's public Bintray repository.
 
 [1]: https://github.com/nebula-plugins/nebula-publishing-plugin
 
