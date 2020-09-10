@@ -19,7 +19,7 @@ To perform a final release:
 
 To use scripts/ plugins from this project in another Gradle project, simply use the `apply from: "<url>"` behaviour in Gradle.
 
-To avoid non-deterministic builds, it is strongly recommended to use a particular release of this project, rather than just pulling in master, so please check the available release tags before sourcing any files. e.g.
+To avoid non-deterministic builds, it is strongly recommended to use a particular release of this project, rather than just pulling from the default branch, so please check the available release tags before sourcing any files. e.g.
 
     apply from: "https://raw.githubusercontent.com/hmrc/gradle-publishing/v0.2.0/<some-file>" 
     
